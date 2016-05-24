@@ -116,6 +116,7 @@
       <version>1.4</version>
     </dependency>
 
+<<<<<<< HEAD
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
@@ -150,6 +151,8 @@
 
 
 
+=======
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
 
 
 

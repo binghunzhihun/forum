@@ -8,7 +8,11 @@
   <!--字符集过滤器-->
   <filter>
     <filter-name>encodingFilter</filter-name>
+<<<<<<< HEAD
     <filter-class>com.it.web.filter.EncodingFilter</filter-class>
+=======
+    <filter-class>com.kaishengit.web.filter.EncodingFilter</filter-class>
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
   </filter>
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
@@ -18,7 +22,11 @@
   <!--判断用户是否登录过滤器-->
   <filter>
     <filter-name>validateUserFilter</filter-name>
+<<<<<<< HEAD
     <filter-class>com.it.web.filter.ValidateUserFilter</filter-class>
+=======
+    <filter-class>com.kaishengit.web.filter.ValidateUserFilter</filter-class>
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
   </filter>
   <filter-mapping>
     <filter-name>validateUserFilter</filter-name>

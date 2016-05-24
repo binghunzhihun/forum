@@ -36,8 +36,13 @@
                 <button class="btn btn-primary" type="button" id="btnSaveEmail">保存</button>
                 <span id="emailHelp" class="text-success hide">电子邮件修改成功</span>
             </div>
+<<<<<<< HEAD
         </form>
 
+=======
+
+        </form>
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
 
     </div>
     <!--box end-->
@@ -80,7 +85,11 @@
             <div class="control-group">
                 <label class="control-label">当前头像</label>
                 <div class="controls">
+<<<<<<< HEAD
                     <img src="http://7xsog4.com1.z0.glb.clouddn.com/${sessionScope.curr_user.avatar}?imageView2/1/w/40/h/40" class="img-circle avatar2" alt="">
+=======
+                    <img src="http://7xs9b4.com1.z0.glb.clouddn.com/${sessionScope.curr_user.avatar}?imageView2/1/w/40/h/40" class="img-circle avatar2" alt="">
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
                 </div>
             </div>
             <hr>
@@ -122,7 +131,11 @@
         });
 
         uploader.on("uploadProgress",function(file){
+<<<<<<< HEAD
             $(".webuploader-pick").text("头像上传中...").attr("disabled","disabled");
+=======
+          $(".webuploader-pick").text("头像上传中...").attr("disabled","disabled");
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
         })
 
         //文件上传失败时调用
@@ -132,7 +145,11 @@
 
         //无论上传成功还是失败都调用
         uploader.on("uploadComplete",function(){
+<<<<<<< HEAD
             $(".webuploader-pick").text("上传新头像").removeAttr("disabled");
+=======
+           $(".webuploader-pick").text("上传新头像").removeAttr("disabled");
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
         });
 
 
@@ -140,8 +157,13 @@
             var key = result.key;
             $.post("/user/changeavatar.do",{"key":key}).done(function(json){
                 if(json.state == "success") {
+<<<<<<< HEAD
                     $(".avatar2").attr("src","http://7xsog4.com1.z0.glb.clouddn.com/"+key+"?imageView2/1/w/40/h/40");
                     $(".avatar1").attr("src","http://7xsog4.com1.z0.glb.clouddn.com/"+key+"?imageView2/1/w/20/h/20");
+=======
+                    $(".avatar2").attr("src","http://7xs9b4.com1.z0.glb.clouddn.com/"+key+"?imageView2/1/w/40/h/40");
+                    $(".avatar1").attr("src","http://7xs9b4.com1.z0.glb.clouddn.com/"+key+"?imageView2/1/w/20/h/20");
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
                     uploader.removeFile(file,true);
                 }
             }).fail(function(){
@@ -260,5 +282,10 @@
     });
 </script>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 83dbc49d5bf69334717e324cccf313653ae11b68
 </body>
 </html>
